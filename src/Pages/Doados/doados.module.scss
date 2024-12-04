@@ -1,0 +1,61 @@
+
+
+.boxDoados{
+    
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.boxLivros{
+    
+    width: 85vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    article{
+        border: solid 2px #005695;
+        width: 15vw;
+        height: 32vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 15px;
+
+    }
+
+}
+
+@media(max-width: 1000px){
+    .boxDoados{
+        justify-content: space-around;
+        
+
+    }
+
+    .boxLivros{
+       
+        article{
+            width: 200px;
+            height: 230px;
+        }
+
+    }
+}
+
+@media(max-width: 520px){
+    .boxLivros{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+
+    .boxDoados{
+        height: auto;
+        padding-bottom: 20px;
+    }
+}

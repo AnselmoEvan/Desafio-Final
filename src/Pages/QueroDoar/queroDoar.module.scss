@@ -1,0 +1,108 @@
+
+
+
+.principal{
+    
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.conteiner{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    form{
+        border: solid 2px #005695;
+        width: 25vw;
+        height: 60vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        div{
+            
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: #005695;
+            //font-size: 15px;
+        }
+        input{
+            border: solid 2px #005695;
+            width: 22vw;
+            height: 5vh;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 20px;
+            &::placeholder{
+                color: black;
+            }
+        }
+        .doar{
+            background-color: #005695;
+            width: 10vw;
+            height: 6vh;
+            padding-left: 0;
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+}
+
+
+
+@media(max-width: 1280px){
+        .conteiner{
+            form{
+            width: 300px;
+            input{
+                width: 270px;
+            }
+            .doar{
+                width: 130px;
+            }
+        }
+    }
+}
+
+@media(max-width: 930px){
+    .conteiner{
+        //border: solid 2px yellow;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 400px){
+    .conteiner{
+        h2{
+            font-size: 15px;
+        }
+        form{
+            div{
+                h3{
+                    font-size: 5vw;
+                }
+                img{
+                    width: 16vw;
+                }
+            }
+            width: 80vw;
+            input{
+                width: 80%;
+            }
+            .doar{
+                width: 28vw
+            }
+        }
+    }
+}
