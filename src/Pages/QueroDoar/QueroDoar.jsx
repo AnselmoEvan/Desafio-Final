@@ -1,5 +1,5 @@
 import S from "./queroDoar.module.scss"
-import livro from "../../assets/vector.png"
+import livro from "../../assets/livro2.png"
 
 
 export default function QueroDoar(){
